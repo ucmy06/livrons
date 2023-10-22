@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>déclaration de colie </title>
+</head>
+<body>
+
+
+    
+    <div class="tete" >
+        <div class="acceuil">
+        <a href="livraison.html">acceuil</a> </div>
+       <a href="contact.html"> nous contacté</a> 
+       <a href="#">nos tarif</a> 
+       <a href="heur d'activité .html"> heur d'activité</a> 
+       <a href="declaration.html"> <h3> déclaration de colie</h3></a> 
+
+ 
+     </div>
+ 
+ 
+     <style>
+         
+ 
+ 
+         body {
+ background-size: cover;
+ background-opacity: 0.5;
+ margin: 0;
+ padding: 0;
+ font-family: Arial, sans-serif;
+}
+         .tete {
+             background-color: antiquewhite;
+             height: 70px;
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             padding: 0 20px;
+ }
+         .acceuil{
+             
+         }
+         .social-icon {
+             position: -ms-page;
+             justify-content: space-between;
+             align-items: center;
+             padding: 0 20px;
+ max-width: 40px; /* Ajustez la taille selon vos besoins */
+ vertical-align: middle; /* Pour aligner le texte verticallement au centre */
+}
+
+ 
+     </style>
+
+
+    
+    <div class="moi">
+       
+        <form action="">
+            <h1>déclaration de colie</h1>
+            <hr>
+            <div id="me">
+            nom <br><input type="text"><br>
+            prenom <br> <input type="text"><br>
+
+
+            addresse mail <br> <input type="email"><br>
+            numero de <br><input type="number"><br>
+
+    <label for="lien">Entrez le lien de recuperation du colie  : <br> </label>
+    <input type="text" id="lien" placeholder="Saisissez le lien ici">
+    <button id="boutonAcceder">Accéder</button>
+    <p id="resultat"></p>
+
+    <script>
+        // Fonction pour accéder au lien lorsque le bouton est cliqué
+        document.getElementById("boutonAcceder").addEventListener("click", function() {
+            var lien = document.getElementById("lien").value;
+            var resultat = document.getElementById("resultat");
+            
+            // Vérifier si le lien est saisi
+            if (lien.trim() === "") {
+                resultat.innerHTML = "Veuillez saisir un lien valide.";
+            } else {
+                // Rediriger vers le lien saisi
+                window.location.href = lien;
+            }
+        });
+    </script>
+        <label for="lien">Entrez le lien de dépot du colie  : <br> </label>
+        <input type="text" id="lien" placeholder="Saisissez le lien ici">
+        <button id="boutonAcceder">Accéder</button>
+        <p id="resultat"></p>
+    
+        <script>
+            // Fonction pour accéder au lien lorsque le bouton est cliqué
+            document.getElementById("boutonAcceder").addEventListener("click", function() {
+                var lien = document.getElementById("lien").value;
+                var resultat = document.getElementById("resultat");
+                
+                // Vérifier si le lien est saisi
+                if (lien.trim() === "") {
+                    resultat.innerHTML = "Veuillez saisir un lien valide.";
+                } else {
+                    // Rediriger vers le lien saisi
+                    window.location.href = lien;
+                }
+            });
+        </script>
+
+
+            date de naissance <br><input type="date"> <br>
+            <div class="bouton"><button> <a href="envoyer.html"> valider</a> </button></div>
+            </div>
+
+        </form>
+    </div>
+
+    
+
+</body>
+</html>
