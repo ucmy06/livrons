@@ -53,13 +53,40 @@
  max-width: 40px; /* Ajustez la taille selon vos besoins */
  vertical-align: middle; /* Pour aligner le texte verticallement au centre */
 }
+        .moi {
+           
+    background-color: skyblue;
+    border:solid;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px rgba(0, 0, 0);
+    background-color: transparent !important;
+            margin-left:30%;
+            margin-right:30%
+           
+        }
+        .vide{
+            padding: 0%;
+            
+        }
+
+        .vide video{
+            position:absolute;
+            min-width: 100%;
+            min-height: 100%;
+            top:50% ;
+            left: 50%;
+            z-index: -100;
+            transform: translate(-50%,-50%);
+
+        }
 
  
      </style>
 
 
     
-    <div class="moi">
+    <div class="moi" >
+        <center>
        
         <form action="">
             <h1>déclaration de colie</h1>
@@ -70,7 +97,8 @@
 
 
             addresse mail <br> <input type="email"><br>
-            numero de <br><input type="number"><br>
+            numero de téléphone de l'émetteur   <br><input type="number"><br>
+            numero de téléphone du destinataire <br><input type="number"><br>
 
     <label for="lien">Entrez le lien de recuperation du colie  : <br> </label>
     <input type="text" id="lien" placeholder="Saisissez le lien ici">
@@ -92,7 +120,7 @@
             }
         });
     </script>
-        <label for="lien">Entrez le lien de dépot du colie  : <br> </label>
+        <label for="lien">Entrez l'addresse de dépot du colie  : <br> </label>
         <input type="text" id="lien" placeholder="Saisissez le lien ici">
         <button id="boutonAcceder">Accéder</button>
         <p id="resultat"></p>
@@ -118,10 +146,15 @@
             <div class="bouton"><button> <a href="envoyer.html"> valider</a> </button></div>
             </div>
 
-        </form>
+        </form></center>
     </div>
 
-    
+    <div class=vide >
+
+        <video autoplay loop muted plays-inline class="video"> <source src="vid.mp4"  ></video>
+
+            </div>
+
 
 </body>
 </html>
